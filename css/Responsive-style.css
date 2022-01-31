@@ -1,0 +1,130 @@
+@media (max-width: 991px){
+    .text-content{
+        width: 100%;
+    }
+    .navigation-wrap.navbar-brand img{
+        height: 3.8125rem;
+    }
+    .navigation-wrap{
+        text-align: center;
+        background-color: var(--white-color);
+    }
+    .navigation-wrap.nav-link{
+        line-height: 1.875rem;
+    }
+    .top-banner{
+        padding: 9.375rem 0 9.375;
+        min-height: 510px;
+    }
+    .testimonial-section .carousel-item{
+        padding:0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 40vw;
+    }
+    .bg-video-wrap .content{
+        top: 70%;
+    }
+    
+}
+@media(max-width: 767px) {
+    h1{
+        font-size: 2rem;
+        line-height: 2.0625rem;
+    }
+    .top-banner{
+        padding: 10.875rem 0 9.375rem;
+    }
+    .story-section{
+        height: auto;
+        padding:3rem 0;
+    }
+    .testimonial-section .carousel-item{
+        padding: 11rem 3.125rem;
+    }
+    .newsletter{
+        width: 75%;
+    }
+    .newsletter .main-btn{
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .footer .footer-link,
+    .footer a i{
+        padding: 0 0.7rem;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 40vw;
+    }
+    #slideshow{
+        border-radius: 15px;
+    }
+    .slidebtn i{
+        font-size: 30px;
+    }
+    .slider-dots li{
+        font-size: 35px;
+    }
+    .icon-bar a {
+        padding: 10px;
+    }
+    .bg-video-wrap .content{
+        top: 50%;
+    }
+     
+}
+
+@media (max-width:330px){
+    .testimonial-section .carousel-item{
+        padding: 13rem 3.125rem;
+    }
+    .bg-video-wrap .text-area h5 {
+        font-size: 2rem;
+        margin-top: 50px;
+    }
+    .swiper-slide .content .caption{
+        display: none;
+    }
+    #slideshow{
+        border-radius: 10px;
+    }
+    .slidebtn i{
+        font-size: 30px;
+    }
+    .slider-dots li{
+        font-size: 25px;
+    }
+    .mt-4{
+        padding-right: var(--bs-gutter-x,2rem);
+        padding-left: var(--bs-gutter-x,2rem);
+    }
+    .main-btn {
+        padding: 7px 7px;
+    }
+    
+    
+}
+
+@media (min-aspect-ratio: 16/9){
+     .bg-video-wrap{
+         width: 100%;
+         height: 100vh;
+     }
+     
+}
+@media (max-aspect-ratio: 16/9){
+    .bg-video-wrap{
+        width: auto;
+        height: 100vh;
+    }
+   
+}
+
+@media (max-width:605px){
+    .container{
+        padding-right: var(--bs-gutter-x,2rem);
+        padding-left: var(--bs-gutter-x,2rem);
+    }
+}
