@@ -22,7 +22,7 @@ $email_body ="User Name: $user_name.\n".
               "selectService: $user_selectService.\n".
               "inputAddress: $user_inputAddress.\n".
               "message: $user_message.\n";
-$to = "alee.hayder512@gmail.com";
+$to = "sajjadhaider1020@gmail.com";
 
 $mailheader = "From: $email_from \r\n";
 $mailheader .= "Reply-To: $user_email \r\n";
