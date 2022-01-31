@@ -1,19 +1,33 @@
 <?php
 
-$name = $_POST['name'];
-$email = $_POST['email'];
-$phone = $_POST['phone'];
-$carModel = $_POST['carModel'];
-$carNum = $_POST['carNum'];
+$user_name = $_POST['name'];
+$user_phone = $_POST['phone'];
+$user_email = $_POST['email'];
+$user_carModel = $_POST['carModel'];
+$user_carNum = $_POST['carNum'];
 $Date = $_POST['Date'];
-$selectService = $_POST['select-service'];
-$inputAddress = $_POST['inputAddress'];
-$message = $_POST['message'];
-$formcontent="User Name: $name \n Phone: $phone \n carModel: $carModel \n carNum: $carNum \n Date: $Date \n selectService: $selectService \n inputAddress: $inputAddress \n message: $message";
-$recipient = "alee.hayder512@gmail.com";
+$user_selectService = $_POST['select-service'];
+$user_inputAddress = $_POST['inputAddress'];
+$user_message = $_POST['message'];
+
+$email_from = 'appointment@fusionautconcept.ae';
 $subject = "New Appointment Booking";
-$mailheader = "From: $email \r\n";
-mail($recipient, $subject, $formcontent, $mailheader);
+
+$email_body ="User Name: $user_name.\n".
+              "Phone: $user_phone.\n".
+              "Email: $user_email.\n".
+              "carModel: $user_carModel.\n".
+              "carNum: $user_carNum.\n".
+              "Date: $Date.\n".
+              "selectService: $user_selectService.\n".
+              "inputAddress: $user_inputAddress.\n".
+              "message: $user_message.\n";
+$to = "alee.hayder512@gmail.com";
+
+$mailheader = "From: $email_from \r\n";
+$mailheader .= "Reply-To: $user_email \r\n";
+
+mail($to,$subject,$email_body,$mailheader);
 header("Location: index.html");
 
 
